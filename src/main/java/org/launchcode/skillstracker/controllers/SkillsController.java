@@ -24,7 +24,6 @@ public class SkillsController {
         return html;
     }
 
-//    @RequestMapping(value = "skills", method = RequestMethod.GET)
     @GetMapping(value="form")
     @ResponseBody
     public String skillsForm(){
@@ -70,37 +69,9 @@ public class SkillsController {
 
     }
 
-//    @RequestMapping(method = RequestMethod.POST, value = "skills")
     @PostMapping(value="form")
     @ResponseBody
     public static String faveSkills (@RequestParam String name, @RequestParam String firstSkills, @RequestParam String secondSkills, @RequestParam String thirdSkills) {
-//        if(name.equals("")) {
-//            name = "World";
-//        }
-
-//        String firstSkills = "";
-//        String secondSkills = "";
-//        String thirdSkills = "";
-//
-//        if (skills1.equals("C")) {
-//            firstSkills = "C#";
-//        } else if (skills1.equals("JS")){
-//            firstSkills = "JavaScript";
-//        } else if (skills1.equals("J")) {
-//            firstSkills = "Java";
-//        } else if (skills2.equals("C")) {
-//            secondSkills = "C#";
-//        } else if (skills2.equals("JS")){
-//            secondSkills = "JavaScript";
-//        } else if (skills2.equals("J")) {
-//            secondSkills = "Java";
-//        } else if (skills3.equals("C")) {
-//            thirdSkills = "C#";
-//        } else if (skills3.equals("JS")){
-//            thirdSkills = "JavaScript";
-//        } else if (skills3.equals("J")) {
-//            thirdSkills = "Java";
-//        }
 
         String html =
                 "<h1>" + name + "</h1>" +
